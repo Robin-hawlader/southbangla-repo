@@ -37,6 +37,7 @@ h2{
     border-radius: 5px;
     font-weight: 700;
 }
+
 .link-button:hover{
     box-shadow: 2px 2px 5px 2px;
 }
@@ -75,4 +76,36 @@ h2{
 }
 footer p{
     text-align: center;
+}
+
+@media only screen and (max-width: 688px) {
+    .flexible-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .half-width, .experiences-item,.experiences-area{
+        width: 100%;
+    }
+    #full-stack-exp{
+        border-left: none;
+        border-bottom: 7px solid;
+        border-image: linear-gradient(red, rgb(233, 98, 9));
+        border-image-slice: 1;
+        width: 70%;
+    }
+    #web-dev-exp{
+        border-left: none;
+        border-bottom: 7px solid;
+        margin-top: 15%;
+        width: 70%;
+    }
+    .position{
+        order:2;
+    }
+    footer p{
+        width: 100%;
+    }
+    
+    
 }
